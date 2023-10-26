@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&family=Quicksand:wght@300&family=Roboto+Mono:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Onest', sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+}
+p {
+    font: 1.2rem;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    background: none;
+    justify-content: center ;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-decoration: dark;
+    color: #fff;
+}
+
+.navbar-svg {
+    height: 20px;
+    width: 20px;
+    padding-right: 20px ;
+    text-decoration: none;
+    color: white;
+}
+
+.parallax, header {
+    background-image: url(parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax {
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:  3rem;
+    color: #fff;
+}
+.parallax-two {
+    background-image: url(parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 0 200px 0;
+}
+.background-one {
+    background-color: #343434;
+    color: #f2f2f2;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.background-two {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 40px 0 40px;
+}
+.logo-space {
+    justify-content: center;
+}
+
+.vmv-svg {
+    color: white;
+    width: 30px; 
+    height: 30px; 
+    margin: 0 15px 0;
+}
+.main-logo {
+    width: 800px;
+    height: 800px;
+}
+.missao, .visao, .valores {
+    padding: 40px 60px 40px;
+
+}
+.missao {
+    background-color: #555;
+}
+.quadro-programacao {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.box-line {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: #f2f2f2;
+    padding: 15px 40px 0;
+    margin: 0 0 0;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#onde-estamos {
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapa a {
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.mapa a:hover {
+    background-color: #0055aa;
+}
+frame {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #555;
+    text-align: center;
+    padding: 20px 50px;
+    color: white;
+}
+.footer-h1 {
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+.footer-svg {
+    color: white;
+    width: 30px; 
+    height: 30px; 
+    margin: 8px;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+    nav ul a{
+        display: inline;
+    }
+    .navbar-svg {
+        align-items: center;
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+
+    .parallax {
+        height: 60vh;
+        font-size: 2rem;
+    }
+
+    .parallax-two {
+        height: 50vh;
+        padding: 30px 20px;
+    }
+
+    .background-one {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px ;
+    }
+
+    .background-two {
+        text-align: center;
+        padding-bottom: 30px ;
+        justify-content: space-around;
+
+    }
+
+    .main-logo {
+        width: 80%;
+        height: auto;
+    }
+
+    .box-line {
+        flex-direction:column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .image-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+    .visao img{
+        max-width: 300px;
+    }
+}
